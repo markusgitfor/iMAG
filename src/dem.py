@@ -15,7 +15,9 @@ class DigitalElevationModel:
         self.s = None
 
     def read_dem(self):
-        """Reads a raster DEM, returns it as numpy array"""
+        """
+        Reads a raster DEM, returns it as numpy array
+        """
         try:
             file = open(self.header_path, "r")
             self.width = int(file.readline().rstrip('\n'))
